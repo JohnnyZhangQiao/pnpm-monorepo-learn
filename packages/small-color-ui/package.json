@@ -1,0 +1,50 @@
+{
+  "name": "small-color-ui",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "small-color-ui core",
+  "license": "MIT",
+  "author": "Johnny",
+  "contributors": [],
+  "main": "src/main.tsx",
+  "module": "src/main.tsx",
+  "typings": "src/types/index.d.ts",
+  "publishConfig": {
+    "main": "dist/tts-controller.cjs.js",
+    "module": "dist/tts-controller.es.js",
+    "typings": "dist/src/main.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JohnnyZhangQiao/pnpm-monorepo-learn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JohnnyZhangQiao/pnpm-monorepo-learn/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "small-color-ui"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && pnpm run build:types",
+    "preview": "vite preview",
+    "build:types": "tsc --p tsconfig.types.json"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "less": "^4.1.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}

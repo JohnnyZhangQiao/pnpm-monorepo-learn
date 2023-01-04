@@ -1,0 +1,25 @@
+{
+  "name": "@small-color-ui/utils",
+  "private": false,
+  "version": "1.0.0",
+  "description": "small-color-ui基础能力包",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "typings": "dist/src/index.d.ts",
+  "publishConfig": {
+    "main": "dist/tts-controller-utils.cjs.js",
+    "module": "dist/tts-controller-utils.es.js",
+    "typings": "dist/src/index.d.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc && rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^10.0.1"
+  }
+}

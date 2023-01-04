@@ -1,0 +1,53 @@
+{
+  "name": "small-color-ui",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install",
+    "prepare": "husky install",
+    "commit": "cz",
+    "clear": "rimraf 'packages/*/{dist,node_modules}' && rimraf node_modules",
+    "build": "pnpm build:utils && pnpm build:editor && pnpm build:core",
+    "build:core": "pnpm --filter @tencent/tts-controller build",
+    "build:editor": "pnpm --filter @tencent/tts-controller-editor build",
+    "build:utils": "pnpm --filter @tencent/tts-controller-utils build",
+    "changeset": "changeset",
+    "update:version": "changeset version",
+    "release": "changeset publish",
+    "lint": "eslint --fix --ext .js,.tsx,ts packages"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@changesets/cli": "^2.26.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@types/node": "^16.11.36",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.7.1",
+    "typescript": "^4.9.4"
+  }
+}
