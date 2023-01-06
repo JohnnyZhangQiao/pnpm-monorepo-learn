@@ -1,3 +1,18 @@
 .appBody {
-  background-color: #2765ab;
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  .itemBlock {
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: all .3s;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 15px 0 #8e8e8e !important;
+    }
+  }
 }

@@ -8,14 +8,18 @@
     "prepare": "husky install",
     "commit": "cz",
     "clear": "rimraf 'packages/*/{dist,node_modules}' && rimraf node_modules",
-    "build": "pnpm build:utils && pnpm build:editor && pnpm build:core",
-    "build:core": "pnpm --filter @tencent/tts-controller build",
-    "build:editor": "pnpm --filter @tencent/tts-controller-editor build",
-    "build:utils": "pnpm --filter @tencent/tts-controller-utils build",
+    "build": "pnpm build:utils && pnpm build:core",
+    "build:core": "pnpm --filter small-color-ui build",
+    "build:utils": "pnpm --filter @small-color-ui/utils build",
     "changeset": "changeset",
     "update:version": "changeset version",
     "release": "changeset publish",
     "lint": "eslint --fix --ext .js,.tsx,ts packages"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "beta",
+    "access": "public"
   },
   "config": {
     "commitizen": {

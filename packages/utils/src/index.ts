@@ -1,3 +1,4 @@
 import { COLOR } from './theme';
 
-export default { COLOR };
+const utils = { COLOR };
+export default utils;

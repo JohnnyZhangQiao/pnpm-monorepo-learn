@@ -1,7 +1,7 @@
 {
   "name": "small-color-ui",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "small-color-ui core",
   "license": "MIT",
@@ -9,11 +9,13 @@
   "contributors": [],
   "main": "src/main.tsx",
   "module": "src/main.tsx",
-  "typings": "src/types/index.d.ts",
   "publishConfig": {
     "main": "dist/tts-controller.cjs.js",
     "module": "dist/tts-controller.es.js",
-    "typings": "dist/src/main.d.ts"
+    "typings": "dist/src/main.d.ts",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "beta",
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
     "build:types": "tsc --p tsconfig.types.json"
   },
   "dependencies": {
+    "@small-color-ui/utils": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -1,7 +1,7 @@
 {
   "name": "@small-color-ui/playground",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "small-color-ui本地调试后台",
   "type": "module",
   "scripts": {
@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "small-color-ui": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "small-color-ui": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
