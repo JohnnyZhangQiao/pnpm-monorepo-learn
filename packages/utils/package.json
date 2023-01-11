@@ -1,7 +1,7 @@
 {
   "name": "@small-color-ui/utils",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "small-color-ui基础能力包",
   "main": "src/index.ts",
   "module": "src/index.ts",

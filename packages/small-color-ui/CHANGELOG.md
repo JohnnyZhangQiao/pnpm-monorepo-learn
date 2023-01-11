@@ -1,5 +1,13 @@
 # small-color-ui
 
+## 1.0.2
+
+### Patch Changes
+
+- 生成日志
+- Updated dependencies
+  - @small-color-ui/utils@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
